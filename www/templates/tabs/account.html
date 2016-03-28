@@ -1,0 +1,49 @@
+
+<ion-view title="Account Settings">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <h1>Your account:</h1>
+        <div class="list card">
+            <div class="item item-divider">{{username}}</div>
+            <div class="item item-body">
+                <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+                    <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+                </div>
+                <form class="list"></form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <form class="list">
+
+
+
+        <div class="list">
+
+            <label class="item item-select" name="eventSelector">
+    <div class="input-label">
+      Select a cause
+    </div>
+    <select>
+      <option  ng-repeat="cause in theCauses">{{cause['causename']}}</option>
+
+    </select>
+  </label>
+
+</div>
+
+        <ion-toggle ng-model="isVolunteer.checked"
+                    ng-change="isVolunteerChanged()">
+          Volunteer for event
+
+        </ion-toggle>
+        </form>
+
+                  <a ui-sref="tab.createCause" class="button button-calm button-block  icon-right ion-log-in">New Cause</a>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view title="Create Cause">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list">
+            <div>
+                <p>
+                    <strong>Create new cause</strong>
+                </p>
+            </div>
+            <div>
+                <p>Select a name and a description for your cause. The search term should be broad enough to capture most potential.</p>
+            </div>
+
+            <label class="item item-input" name="newCauseName" >
+                <input type="text" placeholder="Cause name"  ng-model="data.causename">
+            </label>
+            <label class="item item-input" name="newCauseDescription">
+                <input type="text" placeholder="Description" ng-model="data.description">
+            </label>
+            <label class="item item-input" name="newCauseSearchTerm">
+                <input type="text" placeholder="Search term" ng-model="data.searchterms">
+            </label>
+            <label class="item item-input" name="newCauseVolunteerEmails">
+                <input type="text" placeholder="Suggest volunteers (email) optional" ng-model="data.volunteeremails">
+            </label>
+            <label class="item item-input" name="newCauseRespondersEmailList">
+                <input type="text" placeholder="Suggest responders (email) optional" ng-model="data.respondersemails">
+            </label>
+        </form>
+        <button class="button button-assertive button-block" ng-click="uploadNewCause()")>Create</button>
+    </ion-content>
+</ion-view>

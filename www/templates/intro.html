@@ -1,0 +1,19 @@
+<ion-view  ng-if="!isLoggedIn" class="intro"
+          hide-nav-bar="true" >
+
+	<ion-content scroll="false"
+	             padding="true"
+	             class="center-content padding" >
+		<img src="img/kindnessLogin.png"
+		     alt="" >
+
+	</ion-content >
+    <h1 ng-if="isLoggedIn">User is logged in</h1>
+	<ion-footer-bar class="bar-positive" >
+		<button class="button button-clear button-full"
+		        ng-click="login()" >Login with Facebook
+		</button >
+	</ion-footer-bar >
+
+
+</ion-view >

@@ -1,0 +1,22 @@
+<ion-view>
+ <ion-nav-buttons side="left">
+        <button class="button button-light"
+                ng-click="start()">
+            Skip wizard
+        </button>
+        <button class="button button-light" ion-wizard-previous>
+            Back
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-light" ion-wizard-next>
+            Next
+        </button>
+        <button class="button button-light" ion-wizard-start="start()" condition="startCondition()">
+            Start App
+        </button>
+            </div>
+        </ion-slide-page>
+    </ion-slides>
+
+</ion-view>
