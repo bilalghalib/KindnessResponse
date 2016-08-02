@@ -1,19 +1,44 @@
 <ion-view  ng-if="!isLoggedIn" class="intro"
-          hide-nav-bar="true" >
-
+          hide-nav-bar="true">
 	<ion-content scroll="false"
 	             padding="true"
-	             class="center-content padding" >
-		<img src="img/kindnessLogin.png"
-		     alt="" >
-
-	</ion-content >
-    <h1 ng-if="isLoggedIn">User is logged in</h1>
-	<ion-footer-bar class="bar-positive" >
+	             class="has-header">
+            <div>
+            <img class="imgLoign" src="img/kindnessLogin.png"
+		     alt="" >     
+            </div>
+              <form class="loginform">
+                  
+                    <div class="list">
+                        <label class="item item-input">
+                            <i class="usericon">
+                                <img src="images/usericon.png" alt="" title="">
+                            </i>
+                            <input type="text" placeholder="Username"  value="" ng-model="loginData.username">
+                        </label>
+                        <label class="item item-input">
+                            <i class="usericon">
+                                <img src="images/lockicon.png" alt="" title="">
+                            </i>
+                            <input type="password" value="" placeholder="Password" ng-model="loginData.password">
+                        </label>
+                    </div>
+                    <button class="button button-block button-positive loginbrn" ng-click="login()">Log in</button>
+                    <!--<a  ng-click="forgetPassword()">Forgot Password?</a>-->
+                    
+                    <!--<p class="">Don’t have an account? <a ng-href="#/RegistrationUser">Create Account</a></p>-->
+                
+              <button class="button button-clear button-full"
+		        ng-click="login()" >Login with Facebook
+		</button >
+              </form>
+<!--		<img src="img/kindnessLogin.png"
+		     alt="" >-->
+	</ion-content>
+    <!--<h1 ng-if="isLoggedIn">User is logged in</h1>-->
+<!--	<ion-footer-bar class="bar-positive" >
 		<button class="button button-clear button-full"
 		        ng-click="login()" >Login with Facebook
 		</button >
-	</ion-footer-bar >
-
-
-</ion-view >
+	</ion-footer-bar >-->
+</ion-view>

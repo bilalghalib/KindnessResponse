@@ -1,8 +1,8 @@
 <ion-view title="Events">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <h1>Response Team</h1>
+    <ion-content overflow-scroll="true" class="has-header">
+        
         <div>
-            <p>These events happened recently How will you
+            <p class="tt">These events happened recently How will you
                 <strong>respond</strong>?
 </p>
         </div>
@@ -11,26 +11,26 @@
         <ion-list >
           <ion-item ng-repeat="event in eventLoop"
                     ui-sref="tab.EventTitle({'eventId':event.eventid})"
-                    class="item-thumbnail-left" >
+                     >
+              <img  class="imggg" src="{{event.image}}"
+		     alt="" >
+              <div class="item-thumbnail-left"> 
+                  
               <h2 >{{event.name}}</h2 >
-
             <p class="genres" >
               <i class="ion-ios-pricetag-outline" ></i >
               <span ng-repeat="genre in event.genres" >{{genre}}<span ng-if="!$last" >, </span ></span >
             </p >
-
             <p class="source" >
               <i class="ion-ios-location-outline" ></i >
-              &nbsp;{{show.URL}}
+              {{event.location}}
             </p >
-
             <span ng-show="user.current.favorites[show.showid]" >
               <i class="ion-heart assertive" ></i >
             </span >
+            </div>
 
           </ion-item >
-
-
 
     </ion-content>
 </ion-view>

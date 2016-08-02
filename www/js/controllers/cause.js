@@ -3,7 +3,6 @@ var mod = angular.module('response.controllers.causeMaker', []);
 
 mod.controller('CreateCauseCtrl', function ($scope,
                                             FIREBASE_URL,
-                                            $stateParams,
                                             $state,
                                             $stateParams,
                                             $q,
@@ -24,13 +23,13 @@ mod.controller('CreateCauseCtrl', function ($scope,
 
     		console.log("This is getting new causes every load:");
 
-//   $scope.theCauses = UserService.causes;
-    console.log("da nem is:" + $scope.theCauses)
+//  $scope.theCauses = getSettings.getCause();
+
+    $scope.theCauses = UserService.causes;
+    console.log("da nem is:" + $scope.theCauses[0])
 
 	});
 
-
-  //$scope.theCauses = getSettings.getCause();
 
   $scope.data = {
 		causelist: [],

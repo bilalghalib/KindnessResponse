@@ -109,6 +109,13 @@ $dark:                            #444 !default;
 .ion-android-arrow-up:before {
   content: "\f366"; }
 
+
+.imgLoign{
+    margin-left : 50px;
+    height : 150px;
+    width : 200px;
+    text-align: center;
+}
 .ion-android-attach:before {
   content: "\f367"; }
 
@@ -3098,14 +3105,15 @@ a.subdued {
     .bar.bar-stable.bar-footer {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
-    border-color: #14af6d;
-    background-color: #19dd89;
+    border-color: #A6D4CB;
+    background-color: #A6D4CB;
     background-image: linear-gradient(0deg, #14af6d, #14af6d 50%, transparent 50%);
     color: #fff; }
     .bar.bar-positive .title {
       color: #fff; }
     .bar.bar-positive.bar-footer {
-      background-image: linear-gradient(180deg, #14af6d, #14af6d 50%, transparent 50%); }
+      background-image: linear-gradient(180deg, #14af6d, #14af6d 50%, transparent 50%); 
+    }
   .bar.bar-calm {
     border-color: #0a9dc7;
     background-color: #11c1f3;
@@ -3554,6 +3562,7 @@ a.subdued {
 .tabs-positive > .tabs, .tabs.tabs-positive {
   border-color: #14af6d;
   background-color: #19DD89;
+  
   background-image: linear-gradient(0deg, #14af6d, #14af6d 50%, transparent 50%);
   color: #fff; }
   .tabs-positive > .tabs .tab-item .badge, .tabs.tabs-positive .tab-item .badge {
@@ -5051,7 +5060,7 @@ a.item-content {
 
 .item-thumbnail-left, .item-thumbnail-left .item-content {
   padding-top: 8px;
-  padding-left: 106px;
+  padding-left: 85px;
   min-height: 100px; }
   .item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
     position: absolute;
@@ -5083,6 +5092,51 @@ a.item-content {
   padding-top: 0;
   padding-right: 0; }
 
+
+.evnt {
+    vertical-align: middle;
+    text-align: center;
+        margin-top: 15px;
+}
+
+
+.evnt .eventTitle {
+    font-size : 20px;
+   text-align: center;
+   font-weight: bold;
+}
+.evnt .eventDis {
+    margin-top: 10px;
+    /*font-size : 20px;*/
+   text-align: center;
+   /*font-weight: bold;*/
+}
+
+
+
+:hov
+
+
+.cls
+
+element.style {
+}
+a.button.btnDis.icon-right.ion-android-time {
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+    width: 90%;
+}
+
+
+.h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.bar .button.back-button {
+    color : white;
+}
 .item-image {
   padding: 0;
   text-align: center; }
@@ -7826,8 +7880,110 @@ a.button {
   .messages time {
     font-size: 0.7rem;
     color: #ccc; }
+  
+  .navBarV {
+      background: #345f9c;
+  }
+  
+  .fotter {
+       background: #345f9c;
+  }
+  
+  .tabbar {
+    
+      background: #345f9c;
+  }
+  
+/*  
+  a.tab-item.tab-item-active {
+    background-color: #345f9c;
+}*/
+ .loginform {
+    text-align: center;
+}
 
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+button.button.button-clear.btnSend {
+    color: white;
+}
+
+.imggg {
+ float : left;
+ height : 100px;
+ width : 70px;
+ margin-right: 5px;
+}
+.tt {
+    
+    margin-top : 10px;
+    margin-left : 15px;
+    margin-right : 15px;
+}
+.bar .title {
+     
+    color: white;
+    }
+.loginform .item-input{
+    background:transparent;
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+    position: relative;
+}
+.loginform input[type="text"] ,.loginform input[type="password"] ,.loginform input[type="email"]{
+    color: #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    font-size: 16px;
+    padding: 0 20px 0 30px;
+    height: 35px;
+}
+
+.loginform i.usericon {
+    bottom: 5px;
+    left: 4px;
+    position: absolute;
+}
+
+.loginform i.usericon img{
+    width: 18px;
+    height: auto;
+}
+.loginform button.loginbrn{
+    background: #345f9c;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.loginform a{
+    color: #5b5b5b;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    display: inline-block;
+}
+.loginform p{
+    color: #323232;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 24px;
+}
+.loginform p a{
+    font-weight: bold;
+    margin: 0;
+    font-size: 18px;
+    display: inline;
+}
+
+
+.peopleRes h4 {
+    margin-left : 10px;
+}
+
+.imgPro {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+/*$ionicons-font-path: "../lib/ionic/fonts" !default;
 $light: #fff;
 $assertive: #D31996;
 $positive: #19DD89;
@@ -7840,6 +7996,11 @@ $font-family-sans-serif: "Oxygen", "Helvetica Neue",
 @import "www/lib/ionic/scss/ionic";
 @import "www/scss/app/intro";
 @import "www/scss/app/search";
-@import "www/scss/app/show";
+@import "www/scss/app/show";*/
 
 /*3*/
+
+
+
+
+

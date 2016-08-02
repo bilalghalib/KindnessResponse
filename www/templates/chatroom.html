@@ -53,7 +53,7 @@ title="<div><i class='icon ion-chatbubble user-messages-top-icon'></i> Discuss c
 
   <!-- Send Message Footer Area -->
   <ion-footer-bar keyboard-attach
-                  class="bar-assertive item-input-inset" >
+                  class="bar item-input-inset fotter" >
     <label class="item-input-wrapper" >
       <input type="text"
              ng-change="chatCtrl.updateTyping()"
@@ -61,7 +61,7 @@ title="<div><i class='icon ion-chatbubble user-messages-top-icon'></i> Discuss c
              ng-enter="sendMessage()"
              ng-model="data.message" />
     </label >
-    <button class="button button-clear"
+    <button class="button button-clear btnSend"
             ng-click="sendMessage()" >
       Send
     </button >

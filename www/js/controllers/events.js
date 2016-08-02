@@ -8,7 +8,7 @@ mod.controller('EventsCtrl', function ($scope,
                                      EventsService,
                                      $firebaseArray,
                                      $ionicScrollDelegate,
-                                     UserService, $localstorage) {
+                                     UserService, $localstorage,$state) {
 	$scope.user = UserService;
 
 
@@ -79,5 +79,18 @@ mod.controller('EventsCtrl', function ($scope,
 	});
 
 $scope.loadMessages();
+
+
+
+$scope.onClickEvents = function (text) {
+    
+    $state.go('tab.responseDetail',{event:text});
+    
+  console.log('OnClick Events');  
+};
+
+$scope.OpenLink = function(url) {
+    window.open(url, '_system');
+};
 
 });

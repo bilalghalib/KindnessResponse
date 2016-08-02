@@ -25,8 +25,8 @@ var mod = angular.module('response.controllers.chat', ['response.controllers.dis
 
     $scope.username = $scope.user.current.name
     console.log("da nem is:" + $scope.username)
-	 //initializing messages array
-	self.messages=[]
+	  //initializing messages array
+    self.messages=[]
 
   	SocketService.on('connect',function(){
 

@@ -1,21 +1,24 @@
 <ion-view ng-controller="EventsCtrl as evntCtrl" title="{{event.name}}">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <div class="list card">
-            <div class="item item-divider">{{event.name}}</div>
-            <div class="item item-body">
+    <ion-content overflow-scroll="true"  class="has-header">
+        <!--<div class="list">-->
+        <div class="evnt">
+            <h class="eventTitle">{{event.name}}</h>
                 <div>
-                    <p>{{event.description}}
-                        <strong><a href="{{event.link}}">Full article here</a></strong>
+                    <p class="eventDis">{{event.description}}
+                        <strong><a ng_click="OpenLink({{event.link}})">Full article here</a></strong>
                     </p>
                 </div>
             </div>
-        </div>
-        <a ui-sref="tab.chat({'eventId':event.eventid})" class="button button-positive button-block  icon-right ion-android-time">Discuss event</a>
-        <h4>Our responses:</h4>
+        <!--</div>-->
+        <a ui-sref="tab.chat({'eventId':event.eventid})" class="button btnDis icon-right ion-android-time">Discuss event</a>
+        
+        <div class="peopleRes">
+        <h4>People responses:</h4>
         <ion-list>
-            <ion-item ui-sref="tab.ActionTitle">Fund a school on go fundme</ion-item>
-            <ion-item ui-sref="tab.ActionTitle">Pray for victems</ion-item>
-            <ion-item ui-sref="tab.ActionTitle">Call my mom.</ion-item>
-        </ion-list>
+            <ion-item ng-click="onClickEvents('1')">Fund a school on go fundme</ion-item>
+            <ion-item ng-click="onClickEvents('2')">Pray for victems</ion-item>
+            <ion-item ng-click="onClickEvents('3')">Call my mom.</ion-item>
+      </ion-list>
+   </div>
     </ion-content>
 </ion-view>
